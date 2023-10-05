@@ -13,7 +13,9 @@
 
 @media (max-width: 390px) {
   .container {
-    width: 100%;
-    padding: 25px 100px;
+    width: 95%;
+    padding: 20px 0;
+    display: flex;
+    margin: 0 auto;
   }
 }

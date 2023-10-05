@@ -7,7 +7,7 @@ export const Finance = ({transationList, removeTransation}) => {
     <>
       <section>
         <h3 className={style.resume__title}>Resumo financeiro</h3>
-        <p className={style.paragraph}>Você ainda não possui nenhum lançamento.</p>
+        {transationList.length === 0 && <p className={style.paragraph}>Você ainda não possui nenhum lançamento.</p>}
 
         <ul className={style.card__list}>
           {transationList.map((transation) => {

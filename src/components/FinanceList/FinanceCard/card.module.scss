@@ -56,3 +56,10 @@
   gap: 10px;
 }
 
+
+@media (max-width: 390px) {
+  .card {
+    width: 351px;
+    height: 100px;
+  }
+}

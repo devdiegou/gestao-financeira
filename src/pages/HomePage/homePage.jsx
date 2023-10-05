@@ -5,9 +5,8 @@ import { Total } from "../../components/Total/total"
 export const HomePage = ({transationList, addTransation, removeTransation}) => {
   return <main>
     <div className="container">
-      <Form addTransation={addTransation}/>
+      <Form transationList={transationList} addTransation={addTransation}/>
       <Finance transationList={transationList} removeTransation={removeTransation}/> 
-      <Total />
     </div>
   </main>
 }

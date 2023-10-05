@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from 'react'
 import { Header } from "./components/Header/header"
 import './container.css'
 import { HomePage } from "./pages/HomePage/homePage"
@@ -22,6 +22,10 @@ function App() {
     
     setTransationList(listFiltered)
   }
+
+  // const totalValue = transationList.reduce((prevValue, number) => {
+
+  // })
 
   return (
     <>

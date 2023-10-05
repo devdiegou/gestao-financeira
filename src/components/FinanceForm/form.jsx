@@ -13,7 +13,7 @@ export const Form = ({ transationList, addTransation }) => {
 
   const submit = (e) => {
     e.preventDefault()
-    addTransation(description, price, typeValue)
+    addTransation(description, +price, typeValue)
 
     setDescription('')
     setTypeValue('')
@@ -23,15 +23,15 @@ export const Form = ({ transationList, addTransation }) => {
   return (
     <div className={style.div__container}>
       <form className={style.form__container} onSubmit={submit}>
-        <Input className={style.description} label="Descrição" placeholder="Digite aqui sua descrição" type="text" id="description"
+        <Input className={style.description} label='Descrição' placeholder='Digite aqui sua descrição' type='text' id='description'
           value={description} setValue={setDescription} />
   
-        <Input className={style.value} label='Valor (R$)' type="number"  id='value' value={price} setValue={setPrice} />
+        <Input className={style.value} label='Valor (R$)' type='number'  id='value' value={price} setValue={setPrice} />
   
         <div className={style.type__value}>
           <label>Tipo de valor</label>
-          <select name="Valor" value={typeValue} onChange={(e) => setTypeValue(e.target.value)}>
-            <option>Selecione um tipo</option>
+          <select name='Valor' value={typeValue} onChange={(e) => setTypeValue(e.target.value)} required>
+            <option value={''}>Selecione um tipo</option>
             <option>Entrada</option>
             <option>Saída</option>
           </select>
@@ -39,7 +39,7 @@ export const Form = ({ transationList, addTransation }) => {
   
         <button type='submit' className={style.btn__form}>Inserir valor</button>
       </form>
-      <Total transationList={transationList} />
+      <Total typeValue={typeValue} transationList={transationList} />
     </div>
   )
 }

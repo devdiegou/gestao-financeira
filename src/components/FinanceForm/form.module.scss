@@ -1,4 +1,5 @@
 .div__container {
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -7,66 +8,13 @@
 .form__container {
   border: 1px solid var(--grey-3);
   padding: 40px 20px 40px 20px;
-  width: 355px;
-  height: 410px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.description {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-
-  label {
-    color: var(--grey-4);
-    font-family: 'Inter', sans-serif;
-    font-size: var(--font-title-4);
-    font-weight: var(--font-regular);
-  }
-
-  input {
-    width: 314px;
-    height: 52.8px;
-    padding: 0px 16px;
-    border-radius: var(--radius);
-    border: 2px solid var(--grey-1);
-    background-color: var(--grey-1);
-  }
-
-  p {
-    color: var(--grey-3);
-    font-family: 'Inter', sans-serif;
-    font-size: var(--font-title-4);
-    font-weight: var(--font-regular);
-    line-height: 20px;
-  }
-}
-
-.value {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-
-  label {
-    color: var(--grey-4);
-    font-family: 'Inter', sans-serif;
-    font-size: var(--font-title-4);
-    font-weight: var(--font-regular);
-  }
-
-  input {
-    width: 314px;
-    height: 52.8px;
-    padding: 0px 16px;
-    border-radius: var(--radius);
-    border: 2px solid var(--grey-1);
-    background-color: var(--grey-1);
-  }
-}
-
 .type__value {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -79,7 +27,7 @@
   }
 
   select {
-    width: 351px;
+    width: 100%;
     height: 52.8px;
     padding: 0px 16px;
     border-radius: var(--radius);
@@ -90,11 +38,10 @@
     font-weight: var(--font-regular);
     line-height: 26px;
   }
-
 }
 
 .btn__form {
-  width: 350px;
+  width: 100%;
   height: 48px;
   padding: 13px 20px;
   border-radius: var(--radius);
@@ -109,35 +56,43 @@
   background-color: var(--color-primary-2);
 }
 
+@media (max-width: 768px) {
+  .div__container {
+    width: 100%;
+  }
+
+  .form__container {
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      height: 110px;
+    }
+  }
+}
+
 @media (max-width: 390px) {
   .div__container {
     width: 100%;
   }
 
   .form__container {
-    width: 350px;
-    height: 434px;
-    padding: 30px 0;
+    width: 100%;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     div {
-      width: 300px;
       height: 110px;
-
-      input {
-        width: 255px;
-      }
-
-      select {
-        width: 293px;
-      }
-
+      padding: 0 20px;
+      width: 100%;
     }
 
     .btn__form {
-      width: 293px;
+      width: 87%;
     }
   }
 }

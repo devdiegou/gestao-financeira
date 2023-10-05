@@ -1,11 +1,10 @@
 .container {
-  width: 100%;
-  max-width: 1031px;
-  padding: 50px 100px 0 100px;
-  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-between;
 }
 #root {
   width: 100%;
@@ -13,9 +12,26 @@
 
 @media (max-width: 390px) {
   .container {
-    width: 355px;
+    /* width: 355px; */
     padding: 20px 0;
     display: flex;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
 }

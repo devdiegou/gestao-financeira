@@ -1,11 +1,11 @@
-import { FinanceCard } from "./FinanceCard/card"
-import style from "./finance.module.scss"
+import { FinanceCard } from './FinanceCard/card'
+import style from './finance.module.scss'
 
 export const Finance = ({transationList, removeTransation}) => {
 
   return (
     <>
-      <section>
+      <section className={style.section}>
         <h3 className={style.resume__title}>Resumo financeiro</h3>
         {transationList.length === 0 && <p className={style.paragraph}>Você ainda não possui nenhum lançamento.</p>}
 

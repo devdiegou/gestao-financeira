@@ -20,3 +20,30 @@
   font-weight: var(--font-bold);
   line-height: 34px;
 }
+
+.section {
+  width: 50%;
+}
+
+@media (max-width: 390px) {
+  .section {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .section {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 40px;
+  }
+}

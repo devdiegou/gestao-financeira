@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  max-width: 1031px;
+  padding: 50px 100px 0 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#root {
+  width: 100%;
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 100%;
+    padding: 25px 100px;
+  }
+}

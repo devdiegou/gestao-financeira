@@ -1,0 +1,42 @@
+.total__div {
+  width: 355px;
+  height: 96px;
+  border: 1px solid var(--grey-2);
+  border-radius: 4px;
+  background-color: #fff ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--font-family);
+  position: relative;
+
+  .value__div {
+    display: flex;
+    position: absolute;
+    right: 80px;
+    top: 23px;
+  }
+
+  h3 {
+    color: var(--grey-4);
+    font-size: 1var(--headline);
+    font-weight: var(--font-bold);
+    line-height: 30px;
+    padding-left: 20px;
+  }
+
+  p {
+    color: var(--color-primary);
+    font-size: var(--headline);
+    font-weight: var(--font-bold);
+    line-height: 30px;
+  }
+
+  span {
+    color: #343A40;
+    font-size: var(--font-title-4);
+    font-weight: var(--font-regular);
+    line-height: 22px;
+    padding-left: 20px;
+  }
+}

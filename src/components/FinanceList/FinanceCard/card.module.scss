@@ -19,14 +19,20 @@
 
 .btn__remove {
   padding: 6px 8px;
-  color: var(--grey-4);
+  color: var(--grey-1);
   font-family: var(--font-family);
   font-size: 12px;
   font-weight: var(--font-regular);
   border-radius: 2px;
-  background-color: var(--grey-2);
+  background-color: var(--color-delete);
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn__remove:hover {
+  color: #fff;
+  transform: scale(1.05);
 }
 
 .title {

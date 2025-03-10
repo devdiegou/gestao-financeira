@@ -49,11 +49,13 @@
   background-color: var(--color-primary);
   color: var(--grey-1);
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn__form:hover {
   border: var(--button-border-hover);
   background-color: var(--color-primary-2);
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {

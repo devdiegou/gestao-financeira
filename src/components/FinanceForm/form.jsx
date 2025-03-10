@@ -23,7 +23,7 @@ export const Form = ({ transationList, addTransation }) => {
   return (
     <div className={style.div__container}>
       <form className={style.form__container} onSubmit={submit}>
-        <Input className={style.description} label='Descrição' placeholder='Digite aqui sua descrição' type='text' id='description'
+        <Input className={style.description} label='Descrição' placeholder='Descrição' type='text' id='description'
           value={description} setValue={setDescription} />
   
         <Input className={style.value} label='Valor (R$)' type='number'  id='value' value={price} setValue={setPrice} />
